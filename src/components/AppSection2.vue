@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <section class="section2">
+  <section class="section2-top">
     <img src="../assets/img/about-us-03-image-01.png" alt="">
       <div class="text-container">
           <div class="title">
@@ -32,6 +32,24 @@ export default {
              <p>MaxCoach supports the act of teaching and learning on multiple platforms</p>
           </div>
         </div>
+    </section>
+    <section class="section2-bottom ">
+         <div class="number sessions">
+              <strong class="green-color">1.926</strong>
+              <small>FINISHED SESSIONS</small>
+            </div>
+            <div class="number learners">
+              <strong class="green-color">3.092+</strong>
+              <small>ENROLLED LEARNERS</small>
+            </div>
+            <div class="number instructors">
+              <strong class="green-color">200</strong>
+              <small>ONLINE INSTRUCTORS</small>
+            </div>
+            <div class="number satisfaction-rate">
+              <strong class="green-color">100%</strong>
+              <small>SATISFACTION RATE</small>
+            </div>
   </section>
 </template>
 
@@ -47,37 +65,39 @@ section{
     }
     .text-container{
      padding-left: 30px;
-     
-    .title{
-      margin:20px 0;
-
-      .green-color{
-         color: #62c5b5
+        .title{
+        margin:20px 0;
         }
-    }
-   .accordion {
-        background-color: #fff;
-        color: #696969;
-        cursor: pointer;
-        padding: 10px;
-        
+        .accordion {
+            background-color: #fff;
+            color: #696969;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+       .accordion:hover {
+           background-color: #62c5b5;
+           color:#fff
+        }
+        .panel {
+          padding: 0 18px;
+          background-color: white;
+          display: none;
+          overflow: hidden;
+        }
+    }    
+    .number{
+        width: 25%;
+        text-align: center;
+        strong{
+            display: block;
+            font-size: 40px;
+        }
+    } 
+}
 
-        border: none;
-        outline: none;
-        transition: 0.4s;
-    }
-    .accordion:hover {
-     background-color: #62c5b5;
-     color:#fff
-    }
-    .panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    }
-}
-}
 </style>
 
 
