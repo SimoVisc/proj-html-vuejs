@@ -45,7 +45,7 @@ export default {
 </header>
 </template>
 
-<style lang="scss" >
+<style lang="scss" scoped >
 header{
   background-image: url(../assets/img/jumbo-overlay.svg);
   background-color: #e9e6e3;

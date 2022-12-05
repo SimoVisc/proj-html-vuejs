@@ -5,11 +5,11 @@ export default {
 </script>
 
 <template>
-  <section class="container" >
+  <section  >
         <small>START LEARNING CODING LANGUAGES</small>
-        <div class="title">
-            <h1>Build Your Dream</h1>
-            <h1 class="green-color">TODAY</h1>
+        <div class="title-container">
+        <h1>Build Your Dream</h1>
+        <h1 class="green-color">TODAY</h1>
         </div>
         <div class="articles-container">
             <article>
@@ -40,11 +40,13 @@ export default {
     </section>
 </template>
 
-<style lang="scss" >
-.container{
-    text-align: center;
-    padding-top:40px;
-    .title{
+<style lang="scss" scoped >
+
+ section{
+   width:100%;
+   text-align: center;
+   padding-top:40px;
+    .title-container{
       display: flex;
       justify-content: center;
       margin:20px 0;
@@ -73,7 +75,7 @@ export default {
           color:gray;
         }
        }
-        
+      
     }
-}
+ }
 </style>

@@ -1,23 +1,20 @@
 <script>
 import AppSection1 from './AppSection1.vue';
+import AppSection2 from './AppSection2.vue';
 export default {
   name: 'AppMain',
   components:{
-    AppSection1
+    AppSection1,
+    AppSection2
   }
 }
 </script>
 
 <template>
-  <main>
+  <main class="container">
     <AppSection1/>
- <section class="dream with MaxCoach">
-   <img src="../assets/img/about-us-03-image-01.png" alt="">
-    <div class="title">
-        <small>DREAM WITH <strong>MAXCOACH</strong></small>
-        <h1>Construct A <span class="green-color">Stunning</span> Career Prospective </h1>
-    </div>
- </section>
+    <AppSection2/>
+ 
 </main>
 </template>
 
