@@ -1,19 +1,22 @@
 <script>
-import AppSection1 from './AppSection1.vue';
-import AppSection2 from './AppSection2.vue';
+import AppSectionToday from './AppSectionToday.vue';
+import AppSectionStunning from './AppSectionStunning.vue';
+import AppSectionCourses from './AppSectionCourses.vue';
 export default {
   name: 'AppMain',
   components:{
-    AppSection1,
-    AppSection2
-  }
+    AppSectionToday,
+    AppSectionStunning,
+    AppSectionCourses
+}
 }
 </script>
 
 <template>
   <main class="container">
-    <AppSection1/>
-    <AppSection2/>
+    <AppSectionToday/>
+    <AppSectionStunning/>
+    <AppSectionCourses/>
  
 </main>
 </template>
