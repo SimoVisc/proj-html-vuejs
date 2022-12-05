@@ -8,6 +8,6 @@
   <img src="../assets/img/dark-logo.png" alt="logo">
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>
