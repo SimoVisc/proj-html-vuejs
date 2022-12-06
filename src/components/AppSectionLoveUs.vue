@@ -46,6 +46,7 @@ export default {
    .testimonials{
     width:100%;
     display:flex;
+    padding:20px;
     .testimonial-container{
         width: calc(100% / 3);
         margin:20px;
