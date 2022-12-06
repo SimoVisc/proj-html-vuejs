@@ -6,74 +6,75 @@ export default {
 
 <template>
   <section  >
-        <small>START LEARNING CODING LANGUAGES</small>
-        <div class="title-container">
-        <h1>Build Your Dream</h1>
-        <h1 class="green-color">TODAY</h1>
-        </div>
-        <div class="articles-container">
+      <div class="title">
+         <small>START LEARNING CODING LANGUAGES</small>
+         <h1>Build Your Dream<span class="green-color">TODAY</span></h1>
+      </div>
+      <div class="articles-container">
             <article>
-                <img src="../assets/img/home-5-image-box-01.png" alt="">
-                <h4>Idea Discussion</h4>
-                <p>Get teamed up with the specialists who work and teach coding for years at famous universities</p>
-                <a href="#">start now <i class="fa-solid fa-arrow-right"></i></a>
+                <img class="img-small" src="../assets/img/today-box-01.png" alt="">
+                <div class="text">
+                    <h4>Idea Discussion</h4>
+                    <p>Get teamed up with the specialists who work and teach coding for years at famous universities</p>
+                    <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
+                </div>
             </article>
             <article>
-                <img class="img-big" src="../assets/img/home-5-image-box-02.png" alt="">
-                <h4>Idea Discussion</h4>
-                <p>Get teamed up with the specialists who work and teach coding for years at famous universities</p>
-                <a href="#">start now <i class="fa-solid fa-arrow-right"></i></a>
+                <img class="img-big" src="../assets/img/today-box-2.png" alt="">
+                <div class="text">
+                    <h4>Web Development</h4>
+                    <p>Learn to start building a webpage from scratch. You decide your own pace, course and speed</p>
+                    <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
+               </div>
             </article>
             <article>
-                <img src="../assets/img/home-5-image-box-03.png" alt="">
-                <h4>Idea Discussion</h4>
-                <p>Get teamed up with the specialists who work and teach coding for years at famous universities</p>
-                <a href="#">start now <i class="fa-solid fa-arrow-right"></i></a>
+                <img src="../assets/img/today-box-03.png" alt="">
+                <div class="text">
+                    <h4>System Administration</h4>
+                    <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
+                    <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
+               </div>
             </article>
             <article>
-                <img src="../assets/img/home-5-image-box-04.png" alt="">
-                <h4>Idea Discussion</h4>
-                <p>Get teamed up with the specialists who work and teach coding for years at famous universities</p>
-                <a href="#">start now <i class="fa-solid fa-arrow-right"></i></a>
+                <img src="../assets/img/today-box-04.png" alt="">
+                <div class="text">
+                    <h4>Graphic Design</h4>
+                    <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness</p>
+                    <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
+               </div>
             </article>
-        </div>
+      </div>
     </section>
 </template>
 
 <style lang="scss" scoped >
-
- section{
-   width:100%;
-   text-align: center;
-   padding-top:40px;
-    .title-container{
-      display: flex;
-      justify-content: center;
-      margin:20px 0;
-      
-    }
     .articles-container{
         display: flex;
-        align-items: center;
-        padding: 80px 0;
-       section{
-        padding:10px;
-        img{
-            width:100px;
-            padding: 10px 0;
-            margin: 30px 0
-        }
-        .img-big{
-            margin: 17px 0
-        }
-        p{
-            padding:20px 0
-        }
-        a{
-          color:gray;
-        }
+        padding: 50px 0;
+
+        article{
+            padding: 20px;
+            flex-direction: column;
+            align-items:flex-end;
+
+            img{
+                width:60%;
+                padding: 10px 0;
+                margin: 30px 0
+            }
+            .img-big{
+                width: 47%
+            }
+            .img-small{
+                width:65%
+            }
+            p{
+            padding:20px
+            }
+            a{
+            color: var(--grey)
+            }
        }
-      
     }
- }
+
 </style>
