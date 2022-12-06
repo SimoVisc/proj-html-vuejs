@@ -91,7 +91,7 @@ export default {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
     .accordion:hover {
-     background-color: var(--secondary-color);
+     background-color: var(--primary-color);
      color:#fff
     }
     .panel {
@@ -117,7 +117,6 @@ export default {
     }
   } 
 }
-
 </style>
 
 

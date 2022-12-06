@@ -8,7 +8,7 @@
   <img src="../assets/img/dark-logo.png" alt="logo">
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 img{
     width:20%
 }

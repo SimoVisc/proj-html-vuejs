@@ -82,9 +82,6 @@ export default {
   
   <style lang="scss" scoped >
   section{
-    
-   width:100%;
-   padding-top:40px;
    display:flex;
    justify-content:center;
    flex-wrap: wrap;
@@ -97,22 +94,23 @@ export default {
     width: 40%;
     background-color: #f8f8f8 ;
     display: flex;
+
     margin: 20px;
     padding:20px;
 
     .event-info{
-        width:80%
+        
+        padding-right:20%;
+        text-align: start;
     }
     .event-date{
         width:20%;
+        margin-left:auto;
         .number{
             font-size: 50px;
-
         }
     }
-
-   }
-
-  }
+ }
+}
   
   </style>

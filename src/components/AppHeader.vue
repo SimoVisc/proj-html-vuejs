@@ -38,7 +38,7 @@ export default {
         <button>Download from E-book</button>
       </div>
       <div class="img-container">
-        <img src="../assets/img/home-5-hero-image.png" alt="">
+        <img src="../assets/img/hero-image.png" alt="">
       </div>
     </div>
   
@@ -56,6 +56,7 @@ header{
   .bars{
     display:flex;
     align-items:center;
+    width:70%;
   }
   ul{
     display:flex;
@@ -63,7 +64,8 @@ header{
 
     li{
       list-style: none;
-      padding-left:10px;
+      padding-left:15px;
+      cursor: pointer;
 
       i{
         font-size: 10px;
@@ -76,16 +78,17 @@ header{
   }
   .search-bar{
   display: flex;
-    justify-content: end;
+  justify-content: end;
+  width:20%;
 
     input{
       border:none;
       padding:5px;
-      width:30%
+      width:50%;
     }
     
     button{
-      color: #20ad96;
+      color: var(--primary-color);
       background-color: #fff;
       border:none;
       padding:5px;
@@ -95,14 +98,14 @@ header{
 .hero{
   .text-container{
     width:50%;
-    padding:80px;
+    padding:100px 50px;
     p{
       padding:15px 0;
     }
   }
   .img-container{
     width:50%;
-   padding-right:20px;
+    padding:30px;
    img{
     width:100%
    }
