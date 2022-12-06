@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped >
     .articles-container{
         display: flex;
-        padding: 50px 0;
+        padding-top: 50px;
 
         article{
             padding: 20px;
@@ -72,7 +72,7 @@ export default {
             padding:20px
             }
             a{
-            color: var(--grey)
+            color: var(--gray)
             }
        }
     }

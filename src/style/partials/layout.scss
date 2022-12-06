@@ -4,11 +4,16 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    max-width: var(--container-size);
-
-    &-small {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: calc( var(--container-size) - 200px );
-    }
+    max-width: var(--container-size)
 }
+section{
+    padding-top:10%;
+    width:100%;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.green-color{
+    color: var(--secondary-color)
+   }
