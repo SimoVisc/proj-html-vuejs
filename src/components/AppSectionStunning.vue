@@ -1,11 +1,7 @@
 <script>
 export default {
-  name: 'AppSection2',
-
+  name: 'AppSectionStunning',
 }
-
-      
-
 </script>
 
 <template>

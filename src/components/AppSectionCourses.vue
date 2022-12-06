@@ -11,8 +11,9 @@ export default {
   </div>
   <div class="articles-container">
     <article>
-      <img class="main-image" src="../assets/img/course-1.jpg" alt="">
       <div class="price">$40.00</div>
+      <img class="main-image" src="../assets/img/course-1.jpg" alt="">
+      
       <div class="text">
         <div class="writer">
           <img class="img-writer" src="../assets/img/73ee246daf47502812ccefc84bf02898.jpeg" alt="">
@@ -101,6 +102,9 @@ export default {
      </div>
     </article>
   </div>
+  <div class="btn-container">
+    <button>View all courses</button>
+  </div>
 </template>
 
 <style lang="scss" scoped >
@@ -110,21 +114,25 @@ padding-top: 40px;
 }.articles-container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding-top: 20px;
    
   article{
     width:calc(100% / 3);
 
+
     .main-image{
       width:80%;
       padding-top:35px ;
       position: relative;
+      left: 0;
+      top: 0;
     }
     .price{
       background-color: #62c5b5;
       position:absolute;
-      bottom:20px;
-      right:20px
+      top:auto;
+      left:auto;
     }
   
     .text{
@@ -149,5 +157,10 @@ padding-top: 40px;
       }
     }
   }
+}
+.btn-container{
+  width:100%;
+  text-align: center;
+  padding: 50px 0;
 }
 </style>
