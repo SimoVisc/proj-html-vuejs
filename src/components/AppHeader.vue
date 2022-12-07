@@ -1,10 +1,12 @@
 <script>
 import AppLogo from './AppLogo.vue';
+import AppHero from './AppHero.vue';
 
 export default {
-    name: "AppMain",
+    name: "AppHeader",
     components: {
-      AppLogo
+      AppLogo,
+      AppHero
     },
   }
 </script>
@@ -12,61 +14,53 @@ export default {
 <template>
   <header>
   <div class="container">
-    <AppLogo/>
-    <div class="bars">
-      <div class="nav-bar">
-        <ul>
-          <li>Home <i class="fa-solid fa-chevron-down"></i> </li>
-          <li>Pages <i class="fa-solid fa-chevron-down"></i> </li>
-          <li>Courses <i class="fa-solid fa-chevron-down"></i> </li>
-          <li>Features <i class="fa-solid fa-chevron-down"></i> </li>
-          <li>Blog <i class="fa-solid fa-chevron-down"></i> </li>
-          <li> Shop <i class="fa-solid fa-chevron-down"> <i class="fa-solid fa-cart-shopping big"></i></i> </li>
-          <li><i class="fa-solid fa-circle-user big"></i></li>
-        </ul>
-     </div>
-     <div class="search-bar">
-       <input type="text" placeholder="Search...">
-       <button><i class="fa-solid fa-magnifying-glass"></i></button>
-     </div>
+    <div class="header-top">
+      <AppLogo/>
+      <div class="bars">
+        <div class="nav-bar">
+          <ul>
+            <li>Home <i class="fa-solid fa-chevron-down"></i> </li>
+            <li>Pages <i class="fa-solid fa-chevron-down"></i> </li>
+            <li>Courses <i class="fa-solid fa-chevron-down"></i> </li>
+            <li>Features <i class="fa-solid fa-chevron-down"></i> </li>
+            <li>Blog <i class="fa-solid fa-chevron-down"></i> </li>
+            <li> Shop <i class="fa-solid fa-chevron-down"> <i class="fa-solid fa-cart-shopping big"></i></i> </li>
+            <li><i class="fa-solid fa-circle-user big"></i></li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search...">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+      </div>
     </div>
+    <AppHero/>  
   </div>
-    <div class="hero container">
-      <div class="text-container">
-        <h1>Complete Your Dreams in JavaS Programming</h1>
-        <p>Learn any coding program in distance and for a reasonable fee. you don't have to struggle alone, you've got our assistance and help</p>
-        <button>Download from E-book</button>
-      </div>
-      <div class="img-container">
-        <img src="../assets/img/hero-image.png" alt="">
-      </div>
-    </div>
-  
-</header>
+  </header>
 </template>
 
 <style lang="scss" scoped >
 header{
-  position:relative;
   background-image: url(../assets/img/jumbo-overlay.svg);
   background-color: #e9e6e3;
-}
-.container{
-  display:flex;
-  justify-content: space-between;
- 
+  padding:20px;
+  .header-top{
+   display:flex;
+   justify-content: space-between;
+   color: var(--secondary-font-color);
   .bars{
     display:flex;
     align-items:center;
     width:70%;
   }
   ul{
+    width:100%;
     display:flex;
-    padding-left: 10px;
+    padding-right: 20px;
 
     li{
       list-style: none;
-      padding-left:15px;
+      padding-left:14px;
       cursor: pointer;
 
       i{
@@ -79,39 +73,26 @@ header{
     }
   }
   .search-bar{
-  display: flex;
-  justify-content: end;
-  width:20%;
+   background-color: #fff;
+   display: flex;
+   justify-content: center;
+   width:15%;
+   border-radius: 5px;
+   padding: 10px 5px;
 
     input{
+      background: rgba(0,0,0,0);
       border:none;
-      padding:5px;
-      width:50%;
+      width:60%;
     }
-    
+
     button{
       color: var(--primary-color);
       background-color: #fff;
       border:none;
-      padding:5px;
+     
     }
   }
 }
-.hero{
-  .text-container{
-    width:50%;
-    padding:100px 50px;
-    p{
-      padding:15px 0;
-    }
-  }
-  .img-container{
-    width:50%;
-    padding:30px;
-   img{
-    width:100%
-   }
-  }
 }
-
 </style>

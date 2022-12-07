@@ -4,8 +4,13 @@
 body{
     font-family: 'Inter', sans-serif;
     font-family: 'Lato', sans-serif;
+    
+}
+p{
+    color: var(--primary-font-color)
 }
 h1{
-    font-size:47px
+    font-size:47px;
+    color: var(--secondary-font-color)
  }
  

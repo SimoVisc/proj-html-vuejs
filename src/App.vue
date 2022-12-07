@@ -21,4 +21,5 @@ export default {
 
 <style lang="scss">
 @import './style/global.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap');
 </style>

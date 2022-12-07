@@ -22,3 +22,11 @@ li{
 .green-color{
     color: var(--primary-color)
 }
+// button
+button{
+    background-color: var(--primary-color);
+    color:#fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
