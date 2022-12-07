@@ -43,7 +43,7 @@ export default {
   @click.prevent="openAccordion(index)"
   class="accordion">
   {{ item.titleButton }}</button>
-  <p class="panel"> {{item.textPanel}}</p>
+  <p class="panel" v-show="(item.open = true)"> {{item.textPanel}}</p>
 </div>
 </template>
 
