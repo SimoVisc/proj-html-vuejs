@@ -47,8 +47,10 @@ export default {
 
 <style lang="scss" scoped >
 header{
+  position:relative;
   background-image: url(../assets/img/jumbo-overlay.svg);
   background-color: #e9e6e3;
+}
 .container{
   display:flex;
   justify-content: space-between;
@@ -110,6 +112,6 @@ header{
     width:100%
    }
   }
-  }
 }
+
 </style>

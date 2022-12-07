@@ -28,8 +28,8 @@ export default {
       </div>
       </article>
       <article>
-        <img class="main-image" src="../assets/img/course-2.jpg" alt="">
         <div class="price">Free</div>
+        <img class="main-image" src="../assets/img/course-2.jpg" alt="">
         <div class="text">
           <div class="writer">
             <img class="img-writer" src="../assets/img/writer-2.jpeg" alt="">
@@ -43,8 +43,8 @@ export default {
       </div>
       </article>
       <article>
+        <div class="price">$19.00</div>
         <img class="main-image" src="../assets/img/course-3.jpg" alt="">
-        <div class="price">19.00$</div>
         <div class="text">
           <div class="writer">
             <img class="img-writer" src="../assets/img/writer-2.jpeg" alt="">
@@ -58,8 +58,8 @@ export default {
       </div>
       </article>
       <article>
-        <img class="main-image" src="../assets/img/course-4.jpg" alt="">
         <div class="price">$26.00</div>
+        <img class="main-image" src="../assets/img/course-4.jpg" alt="">
         <div class="text">
           <div class="writer">
             <img class="img-writer" src="../assets/img/writer-1.jpeg" alt="">
@@ -73,8 +73,8 @@ export default {
       </div>
       </article>
       <article>
-        <img class="main-image" src="../assets/img/course-5.jpg" alt="">
         <div class="price">$39.00</div>
+        <img class="main-image" src="../assets/img/course-5.jpg" alt="">
         <div class="text">
           <div class="writer">
             <img class="img-writer" src="../assets/img/writer-1.jpeg" alt="">
@@ -88,8 +88,8 @@ export default {
       </div>
       </article>
       <article>
-        <img class="main-image" src="../assets/img/course-6.jpg" alt="">
         <div class="price">$59.00</div>
+        <img class="main-image" src="../assets/img/course-6.jpg" alt="">
         <div class="text">
           <div class="writer">
             <img class="img-writer" src="../assets/img/writer-1.jpeg" alt="">
@@ -117,32 +117,31 @@ padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 20px;
-   
+
   article{
     width:calc(100% / 3);
+    position:relative;
+    left:auto;
+    bottom: auto;
+    padding-top: 50px;
     .main-image{
       display: block;
       width:80%;
-      padding-top:35px ;
-      position: relative;
-      right:auto;
-      bottom: auto;
+      
     }
     .price{
-      background-color: #62c5b5;
+      width:14.8%;
+      color:#fff;
+      background-color: var(--primary-color);
       position:absolute;
-      top:auto;
-      right:auto;
+      left: 196px;
+      bottom:auto;
     }
-  
     .text{
       width:80%;
       padding-top:10px;
       padding-left:10px;
       text-align:start;
-
-      
       .writer{
        display: flex;
        align-items: center;

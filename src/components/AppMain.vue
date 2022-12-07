@@ -6,7 +6,7 @@ import AppSectionPace from './AppSectionPace.vue';
 import AppSectionMobile from './AppSectionMobile.vue';
 import AppSectionEvents from './AppSectionEvents.vue';
 import AppSectionLoveUs from './AppSectionLoveUs.vue';
-import AppSectionOnlineCertification from './AppSectionOnlineCertification.vue';
+import AppSectionOnlineCertification from './AppSectionOnlineCertification.vue'
 
 export default {
   name: 'AppMain',

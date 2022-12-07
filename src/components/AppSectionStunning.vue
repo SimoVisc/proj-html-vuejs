@@ -1,6 +1,10 @@
 <script>
+import AppAccordion from './AppAccordion.vue';
 export default {
   name: 'AppSectionStunning',
+  components:{
+    AppAccordion
+  }
 }
 </script>
 
@@ -14,24 +18,7 @@ export default {
           <small>DREAM WITH <strong>MAXCOACH</strong></small>
           <h1>Construct A <span class="green-color">Stunning</span> Career Prospective </h1>
         </div>
-        <div class="accordions-container">
-          <button class="accordion">Multiple Platforms Supported for Teaching & Studying</button>
-          <div class="panel">
-              <p>MaxCoach supports the act of teaching and learning on multiple platforms</p>
-          </div>
-        </div>
-        <div class="accordions-container">
-          <button class="accordion">Multiple Course Partecipation at the Same Time</button>
-          <div class="panel">
-            <p>MaxCoach supports the act of teaching and learning on multiple platforms</p>
-          </div>
-        </div>
-        <div class="accordions-container">
-          <button class="accordion">Track Study Progress & Deliver Prompt Feedback</button>
-          <div class="panel">
-            <p>MaxCoach supports the act of teaching and learning on multiple platforms</p>
-          </div>
-        </div>
+        <AppAccordion />
      </div>
    </div>
    <div class="section-bottom">
