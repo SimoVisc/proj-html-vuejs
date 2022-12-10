@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section class="container">
     <div class="section-top">
       <img class="img-1" src="../assets/img/underlay-shape-lilla.svg" alt="">
       <img class="img-2" src="../assets/img/stunning-1.png" alt="">
@@ -21,7 +21,9 @@ export default {
         <AppAccordion />
      </div>
    </div>
-   <div class="section-bottom">
+  </section> 
+  <div class="bg-img">
+   <section class="section-bottom container">
      <div class="number sessions">
         <strong class="green-color">1.926</strong>
         <small>FINISHED SESSIONS</small>
@@ -38,11 +40,12 @@ export default {
         <strong class="green-color">100%</strong>
         <small>SATISFACTION RATE</small>
       </div>
-   </div>
-  </section>
+   </section>
+  </div>
 </template>
 
 <style lang="scss" scoped >
+
 .section-top{
   display:flex;
   .img-1{
@@ -88,10 +91,11 @@ export default {
       overflow: hidden;
     }
   } 
-}   
+}
+.bg-img{   
+  background-color: var(--bg-primary-color);
 .section-bottom{
   display:flex;
-  background-color: var(--bg-primary-color);
   padding:20px;
   margin-top: 15%;
   .number{
@@ -103,6 +107,7 @@ export default {
       font-size: 40px;
     }
   } 
+}
 }
 </style>
 

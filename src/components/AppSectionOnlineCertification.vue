@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-  <section>
-   <div class="text-container">
+  <section class="container">
+   <div class="text">
       <p> Start today for getting <span class="green-color">Online Certification</span> </p>
       <h3>You can be your own giuding star with our help!</h3>
     </div>  
@@ -19,10 +19,15 @@ export default {
    width:100%;
    padding-top:40px;
   text-align: center;
-
-   .text-container{
-   padding: 20px;
+   .text{
+    padding: 20px;
+    h3{
+      color: var(--secondary-font-color)
+    }
    }
+   button{
+        padding:10px 20px;
+    }
+
   }
-  
   </style>

@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <section>
+ <section class="container">
     <div class="title">
       <small>PEOPLE ARE PRAISING MAXCOACH</small>
       <h1>What make they <span class="green-color">love us?</span></h1>

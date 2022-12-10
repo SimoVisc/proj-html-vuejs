@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <section>
+  <section class="container">
     <div class="text">
       <div class="title">
          <small>WHY ESITATE TO REGISTER?</small>
@@ -39,6 +39,9 @@ export default {
         padding-right: 10px;
       }
      }
+     button{
+        padding:10px 20px;
+      }
     }
     img{
       width:40%;

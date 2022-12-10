@@ -5,30 +5,31 @@ export default {
 </script>
 
 <template>
-  <section  >
+  <section class="container">
       <div class="title">
          <small>START LEARNING CODING LANGUAGES</small>
-         <h1>Build Your Dream<span class="green-color">TODAY</span></h1>
+         <h1>Build Your Dream <span class="green-color">TODAY</span></h1>
       </div>
       <div class="articles-container">
             <article>
-                <img class="img-small" src="../assets/img/today-box-01.png" alt="">
+                <div class="img-container"><img class="img-small" src="../assets/img/today-box-01.png" alt=""></div>
                 <div class="text">
                     <h4>Idea Discussion</h4>
-                    <p>Get teamed up with the specialists who work and teach coding for years at famous universities</p>
+                    <p>Get teamed up with the specialists who work and teach coding for years at famous universities.</p>
                     <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
                 </div>
-            </article>
+           </article>
             <article>
-                <img class="img-big" src="../assets/img/today-box-2.png" alt="">
+
+               <div class="img-container"> <img class="img-big" src="../assets/img/today-box-2.png" alt=""></div>
                 <div class="text">
                     <h4>Web Development</h4>
-                    <p>Learn to start building a webpage from scratch. You decide your own pace, course and speed</p>
+                    <p>Learn to start building a webpage from scratch. You decide your own pace, course and speed.</p>
                     <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
                </div>
             </article>
             <article>
-                <img src="../assets/img/today-box-03.png" alt="">
+                <div class="img-container"><img src="../assets/img/today-box-03.png" alt=""></div>
                 <div class="text">
                     <h4>System Administration</h4>
                     <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
@@ -36,10 +37,10 @@ export default {
                </div>
             </article>
             <article>
-                <img src="../assets/img/today-box-04.png" alt="">
+                <div class="img-container"><img src="../assets/img/today-box-04.png" alt=""></div>
                 <div class="text">
                     <h4>Graphic Design</h4>
-                    <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness</p>
+                    <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
                     <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
                </div>
             </article>
@@ -53,27 +54,42 @@ export default {
         padding-top: 50px;
 
         article{
-            padding: 20px;
-            flex-direction: column;
-            align-items:flex-end;
+        height:100%;
+        padding: 10px;
+        display:flex;
+        flex-direction: column;
+        .img-container{
+          height:200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin:10px;
 
             img{
                 width:60%;
-                padding: 10px 0;
-                margin: 30px 0
             }
-            .img-big{
-                width: 47%
+        }
+            .text{
+                display: flex;
+                flex-direction: column;
+            
+                h4{
+                height:50px;
+                }
+                p{
+                flex-grow:1;
+                }
+                strong{
+                height:50px;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+
+                a{
+                color: var(--gray)
+                }
             }
-            .img-small{
-                width:65%
-            }
-            p{
-            padding:20px
-            }
-            a{
-            color: var(--gray)
-            }
+        }
        }
     }
 

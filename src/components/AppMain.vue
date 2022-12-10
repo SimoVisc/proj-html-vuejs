@@ -24,7 +24,7 @@ export default {
 </script>
 
 <template>
-  <main class="container">
+  <main>
     <AppSectionToday/>
     <AppSectionStunning/>
     <AppSectionCourses/>

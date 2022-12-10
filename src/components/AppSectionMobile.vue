@@ -4,7 +4,7 @@ export default {
 }
 </script>
 <template>
-  <section>
+  <section class="container">
     <img src="../assets/img/mobile-1.png" alt="">
     <div class="text">
       <div class="title">
@@ -30,6 +30,9 @@ export default {
       width:40%;
       p{
         padding: 20px 0
+      }
+      button{
+        padding:10px 20px;
       }
     }
     

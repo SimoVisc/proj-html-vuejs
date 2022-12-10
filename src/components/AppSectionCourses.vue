@@ -5,14 +5,15 @@ export default {
 </script>
 
 <template>
-  <section>
+  <div class="bg-img">
+    <section class="container">
     <div class="title">
       <small>CHOOSE WHERE YOU'D LIKE TO BEGIN</small>
       <h1>Latest Featured <span class="green-color">Courses</span></h1>
     </div>
     <div class="articles-container">
       <article>
-        <div class="price">$40.00</div>
+        <div class="price"><strong>$40.00</strong></div>
         <img class="main-image" src="../assets/img/course-1.jpg" alt="">
         
         <div class="text">
@@ -28,7 +29,7 @@ export default {
       </div>
       </article>
       <article>
-        <div class="price">Free</div>
+        <div class="price"><strong>Free</strong></div>
         <img class="main-image" src="../assets/img/course-2.jpg" alt="">
         <div class="text">
           <div class="writer">
@@ -43,7 +44,7 @@ export default {
       </div>
       </article>
       <article>
-        <div class="price">$19.00</div>
+        <div class="price"><strong>$19.00</strong></div>
         <img class="main-image" src="../assets/img/course-3.jpg" alt="">
         <div class="text">
           <div class="writer">
@@ -58,7 +59,7 @@ export default {
       </div>
       </article>
       <article>
-        <div class="price">$26.00</div>
+        <div class="price"><strong>$26.00</strong></div>
         <img class="main-image" src="../assets/img/course-4.jpg" alt="">
         <div class="text">
           <div class="writer">
@@ -73,7 +74,7 @@ export default {
       </div>
       </article>
       <article>
-        <div class="price">$39.00</div>
+        <div class="price"><strong>$39.00</strong></div>
         <img class="main-image" src="../assets/img/course-5.jpg" alt="">
         <div class="text">
           <div class="writer">
@@ -88,7 +89,7 @@ export default {
       </div>
       </article>
       <article>
-        <div class="price">$59.00</div>
+        <div class="price"><strong>$59.00</strong></div>
         <img class="main-image" src="../assets/img/course-6.jpg" alt="">
         <div class="text">
           <div class="writer">
@@ -104,12 +105,18 @@ export default {
       </article>
     </div>
     <div class="btn-container">
-      <button>View all courses</button>
+      <button>View all courses  <i class="fa-solid fa-arrow-right"></i></button>
     </div>
   </section>
+  </div>
 </template>
 
 <style lang="scss" scoped >
+.bg-img{
+  background-image: url(../assets/img/close.svg) ;
+  background-color: #fcfcfc;
+ 
+}
 .title{
 text-align: center;
 padding-top: 40px;
@@ -127,15 +134,15 @@ padding-top: 40px;
     .main-image{
       display: block;
       width:80%;
-      
     }
     .price{
-      width:14.8%;
+      width:20%;
       color:#fff;
       background-color: var(--primary-color);
       position:absolute;
-      left: 196px;
+      left: 180px;
       bottom:auto;
+      padding:5px;
     }
     .text{
       width:80%;
@@ -152,7 +159,6 @@ padding-top: 40px;
         }
       }
       small{
-        color: var(--gray);
         padding-right:5px
       }
       h5{
@@ -166,5 +172,8 @@ padding-top: 40px;
   width:100%;
   text-align: center;
   padding: 50px 0;
+  button{
+    padding:10px 20px;
+  }
 }
 </style>

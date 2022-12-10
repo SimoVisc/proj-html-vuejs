@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section class="container">
         <div class="title">
             <small>GET IN CONTACT NOW</small>
             <h1>Upcoming<span class="green-color">Events</span></h1>
@@ -76,7 +76,7 @@ export default {
                 <button>Get ticket</button>
             </div>
        </div>
-       <span>Exited about our event? <a href="#"> view all events </a></span>
+       <span>Exited about our event? <a class="green-color" href="#"> view all events <i class="fa-solid fa-arrow-right"></i> </a></span>
   </section>
 </template>
   
@@ -99,16 +99,18 @@ export default {
     padding:20px;
 
     .event-info{
-        
         padding-right:20%;
         text-align: start;
     }
     .event-date{
-        width:20%;
+        width:30%;
         margin-left:auto;
         .number{
             font-size: 50px;
         }
+        button{
+        padding:10px;
+      }
     }
  }
 }
