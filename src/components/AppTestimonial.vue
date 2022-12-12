@@ -55,6 +55,7 @@ export default {
 
 <style lang="scss" scoped>
 .testimonial-container{
+    background-color: #fff;
       position: relative;
       width: calc(100% / 3);
       margin:20px;

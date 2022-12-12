@@ -24,8 +24,8 @@ export default {
             <li>Courses <i class="fa-solid fa-chevron-down"></i> </li>
             <li>Features <i class="fa-solid fa-chevron-down"></i> </li>
             <li>Blog <i class="fa-solid fa-chevron-down"></i> </li>
-            <li> Shop <i class="fa-solid fa-chevron-down"> <i class="fa-solid fa-cart-shopping big"></i></i> </li>
-            <li><i class="fa-solid fa-circle-user big"></i></li>
+            <li> Shop <i class="fa-solid fa-chevron-down"></i> <i class="fa-solid fa-cart-shopping big"></i> </li>
+            <li><i class="fa-regular fa-circle-user big"></i></li>
           </ul>
         </div>
         <div class="search-bar">
