@@ -76,7 +76,7 @@ export default {
                 <button>Get ticket</button>
             </div>
        </div>
-       <span>Exited about our event? <a class="green-color" href="#"> view all events <i class="fa-solid fa-arrow-right"></i> </a></span>
+       <span class="link-event">Exited about our event? <a class="green-color" href="#"> view all events <i class="fa-solid fa-arrow-right"></i> </a></span>
   </section>
 </template>
   
@@ -94,9 +94,9 @@ export default {
     width: 40%;
     background-color: #f8f8f8 ;
     display: flex;
-
     margin: 20px;
     padding:20px;
+
 
     .event-info{
         padding-right:20%;
@@ -112,7 +112,10 @@ export default {
         padding:10px;
       }
     }
- }
+   }
+   .link-event{
+    margin: 50px 0
+   }
 }
   
   </style>

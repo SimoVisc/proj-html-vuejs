@@ -1,66 +1,49 @@
 <script>
+import AppTestimonial from './AppTestimonial.vue';
 export default {
   name: 'AppSectionLoveUs',
+  components:{
+    AppTestimonial
+  }
 }
 </script>
 
 <template>
+  <div class="bg-color">
  <section class="container">
     <div class="title">
       <small>PEOPLE ARE PRAISING MAXCOACH</small>
       <h1>What make they <span class="green-color">love us?</span></h1>
     </div>
     <div class="testimonials">
-      <div class="testimonial-container">
-        <img src="../assets/img/testimonial-avatar-01.jpg" alt="">
-        <p>I am free to learn at my own pace, follow my own schedule and choose the subject i like. Great study portal for people.</p>
-        <strong>MINA HOLLACE</strong>
-        <small>/Freelancer</small>
-      </div>
-      <div class="testimonial-container">
-        <img src="../assets/img/testimonial-avatar-2.jpg" alt="">
-        <p>MaxCoach is my best choise. their tutors are smart and professional when dealing with students.</p>
-        <strong>MADLEY PONDOR</strong>
-        <small>/IT specialist</small>
-      </div>
-      <div class="testimonial-container">
-        <img src="../assets/img/testimonial-avatar-03.jpg" alt="">
-        <p>I am happy with their arrangement of lessons and subjects. They reflect a scientific investigation.</p>
-        <strong>LUVIC DUBBLE</strong>
-        <small>/Private Tutor</small>
-        </div>
-      </div>
+      <AppTestimonial/>
+    </div>
+    <div class="points-container">
+      <i class="fa-solid fa-period"></i>
+    </div>
   </section>
+ </div>
 </template>
   
   <style lang="scss" scoped >
-  section{
+  .bg-color{
+    background-color: var(--bg-primary-color);
    .title{
     width:100%;
     text-align: center;
+    padding: 20px 0;
    }
    .testimonials{
     width:100%;
     display:flex;
-    padding:20px;
-    .testimonial-container{
-      width: calc(100% / 3);
-      margin:20px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      text-align: center;
-      
-      img{
-       border-radius: 50%;
-       width: 30%;
-      }
-      p{
-        padding:20px
-      }
-      strong{
-        display:block;
-        padding:10px
-      }
-    }
+    padding:30px 20px;
+
+  .points-container{
+    display: block;
+    color: var(--primary-color);
+    display: flex;
+  }
+    
   }
 }  
   

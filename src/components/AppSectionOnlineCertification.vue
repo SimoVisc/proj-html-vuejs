@@ -5,20 +5,27 @@ export default {
 </script>
 
 <template>
-  <section class="container">
+  <div class="bg-color">
+  <div class="container">
+    <img class="img-1" src="../assets/img/maxcoach-shape-01.png" alt="">
    <div class="text">
       <p> Start today for getting <span class="green-color">Online Certification</span> </p>
       <h3>You can be your own giuding star with our help!</h3>
     </div>  
     <button>Get started now</button>  
-  </section>
+  <img class="img-2" src="../assets/img/maxcoach-shape-02.png" alt="">
+</div>
+ </div>
 </template>
   
   <style lang="scss" scoped >
-  section{
-   width:100%;
-   padding-top:40px;
-  text-align: center;
+ .bg-color{
+   background-color: var(--bg-primary-color);
+   .container{
+    width:100%;
+    position:relative;
+    text-align: center;
+    padding-bottom: 30px;
    .text{
     padding: 20px;
     h3{
@@ -26,8 +33,19 @@ export default {
     }
    }
    button{
-        padding:10px 20px;
+      padding:10px 20px;
     }
-
+    .img-1{
+      position:absolute;
+      top: 30%;
+      left:0;
+    }
+    .img-2{
+      width:10%;
+      position:absolute;
+      top: 40%;
+      right:5%;
+    }
+  }
   }
   </style>

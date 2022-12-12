@@ -19,13 +19,15 @@ export default {
       </ul>
       <button>Get started for free</button>
     </div>
-    <img src="../assets/img/pace-01.png" alt="">
+    <img class="img-1" src="../assets/img/pace-01.png" alt="">
+    <img class="img-2" src="../assets/img/underlay-shape-grey.svg" alt="">
+    <img  class="img-3" src="../assets/img/maxcoach-shape-05.png" alt="">
   </section>
 </template>
   
   <style lang="scss" scoped >
   section{
-   width:100%;
+    position:relative;
    display: flex;
    padding-top:40px;
    .text{
@@ -40,12 +42,26 @@ export default {
       }
      }
      button{
-        padding:10px 20px;
+        padding: 10px 20px;
+        margin:20px;
       }
     }
-    img{
-      width:40%;
-    }
+    .img-1{
+    width:40%;
+    position:absolute;
+    top:auto;
+    left:50%;
+  }
+  .img-2{
+    width:40%;
+    padding-top:100px;
+  }
+  .img-3{
+    width:15%;
+    position:absolute;
+    top:55%;
+    right: 0;
+  }
   }
   
   </style>

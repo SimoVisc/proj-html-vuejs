@@ -50,7 +50,7 @@ export default {
   display:flex;
   .img-1{
     position:relative;
-    width:30%;
+    width: 30%;
     top:auto;
     left:auto;
   }
@@ -66,30 +66,7 @@ export default {
    text-align: start;
    .title{
      margin:20px ;
-    }
-    .accordion {
-      width:100%;
-      text-align: start;
-      background-color: #fff;
-      color:var(--gray);
-      cursor: pointer;
-      padding:10px;
-      margin:20px;
-      border: none;
-      outline: none;
-      transition: 0.4s;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    }
-    .accordion:hover {
-     background-color: var(--primary-color);
-     color:#fff
-    }
-    .panel {
-      padding: 0 18px;
-      background-color: #fff;
-      display: none;
-      overflow: hidden;
-    }
+   }
   } 
 }
 .bg-img{   

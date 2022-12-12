@@ -5,7 +5,12 @@ export default {
 </script>
 <template>
   <section class="container">
-    <img src="../assets/img/mobile-1.png" alt="">
+   <div class="img-container">
+    <img class="img-3" src="../assets/img/maxcoach-shape-01.png" alt="">
+    <img class="img-2" src="../assets/img/underlay-shape-grey.svg" alt="">
+    <img class="img-1" src="../assets/img/mobile-1.png" alt="">
+    <img class="img-4" src="../assets/img/maxcoach-shape-07.png" alt="">
+  </div>
     <div class="text">
       <div class="title">
         <small>WHAT ARE YOU LOOKING FOR?</small>
@@ -21,11 +26,31 @@ export default {
   section{
    display: flex;
    text-align: start;
-   
-    img{
-    width:50%;
-    padding-right:50px;
-    }
+   .img-container{
+    width:60%;
+    position:relative;
+    display: flex;
+    .img-1{
+    width:53%;
+    position:absolute;
+    top:auto;
+    left:25%;
+  }
+  .img-2{
+    width:75%;
+    padding-top:20px;
+  }
+   .img-3{
+    position:absolute;
+    top:40%;
+    left:-20%;
+   }
+   .img-4{
+    width:20%;
+    height:80%;
+    padding-top: 40%;
+   }
+}
     .text{
       width:40%;
       p{
