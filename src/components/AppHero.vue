@@ -23,20 +23,21 @@ export default {
 .hero{
    width:100%;
    display: flex;
+   justify-content: space-between;
     .text{
-      width:50%;
-      padding: 60px;
+      width:40%;
+      padding: 60px 0;
       p{
         padding:20px 0;
       }
     }
     img{
       width:50%;
-      padding:30px;
+      padding:30px
     }
     button{
      padding: 10px 20px;
-     color:#fff;
+     color:var(--white);
     }
 }
 </style>

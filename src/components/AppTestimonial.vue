@@ -43,7 +43,7 @@ export default {
 <template>
 
 <div class="testimonial-container" v-for=" testimonial in testimonials">
-    <img :src="`assets/img/testimonial-avatar${testimonial.img}`" alt="">
+    <!-- <img :src="`assets/img/testimonial-avatar${testimonial.img}`" alt=""> -->
     <div class="text">
         <p>{{ testimonial.text}}</p>
         <strong>{{testimonial.name}}</strong>

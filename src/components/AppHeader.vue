@@ -42,38 +42,38 @@ export default {
 <style lang="scss" scoped >
 header{
   background-image: url(../assets/img/jumbo-overlay.svg);
-  background-color: #e9e6e3;
+  background-color: var(--bg-primary-color);
   padding:20px;
   .header-top{
    display:flex;
    justify-content: space-between;
    color: var(--secondary-font-color);
   .bars{
+    width:70%;
     display:flex;
     align-items:center;
-    width:70%;
-  }
-  ul{
-    width:100%;
-    display:flex;
-    padding-right: 20px;
+    ul{
+      width:100%;
+      display:flex;
+      padding-right: 20px;
 
-    li{
-      list-style: none;
-      padding-left:14px;
-      cursor: pointer;
-
-      i{
-        font-size: 10px;
-      }
+      li{
+        list-style: none;
+        padding-left:14px;
+        cursor: pointer;
+        
+        i{
+          font-size: 10px;
+        }
       .big{
         font-size: 16px;
         padding-right:5px
+        }
       }
     }
   }
   .search-bar{
-   background-color: #fff;
+   background-color: var(--white);
    display: flex;
    justify-content: center;
    width:15%;
@@ -82,15 +82,12 @@ header{
 
     input{
       background: rgba(0,0,0,0);
-      border:none;
       width:60%;
     }
 
     button{
       color: var(--primary-color);
-      background-color: #fff;
-      border:none;
-     
+      background-color: var(--white);
     }
   }
 }

@@ -10,6 +10,6 @@
 
 <style lang="scss" scoped>
 img{
-    width:20%
+  width:20%
 }
 </style>

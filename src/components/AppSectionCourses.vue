@@ -23,8 +23,8 @@ export default {
           </div>
           <h5>Learning to Write as a Professional Author </h5> 
           <div class="view-container">
-          <small> <i class="fa-solid fa-file"></i> 20 Lessons</small>
-          <small> <i class="fa-solid fa-user"></i> 50 students</small>
+          <small> <i class="fa-regular fa-file-lines"></i> 20 Lessons</small>
+          <small> <i class="fa-regular fa-user"></i> 50 students</small>
           </div>
       </div>
       </article>
@@ -38,8 +38,8 @@ export default {
           </div>
           <h5>Customer-centric Info-Tech Strategies </h5> 
           <div class="view-container">
-          <small> <i class="fa-solid fa-file"></i>  24 Lessons</small>
-          <small> <i class="fa-solid fa-user"></i> 769 students</small>
+          <small> <i class="fa-regular fa-file-lines"></i>  24 Lessons</small>
+          <small> <i class="fa-regular fa-user"></i> 769 students</small>
           </div>
       </div>
       </article>
@@ -53,8 +53,8 @@ export default {
           </div>
           <h5>Open Programming Courses for Everyone: Python </h5> 
           <div class="view-container">
-          <small> <i class="fa-solid fa-file"></i>  17 Lessons</small>
-          <small> <i class="fa-solid fa-user"></i> 62 students</small>
+          <small> <i class="fa-regular fa-file-lines"></i> 17 Lessons</small>
+          <small> <i class="fa-regular fa-user"></i> 62 students</small>
           </div>
       </div>
       </article>
@@ -68,8 +68,8 @@ export default {
           </div>
           <h5>Academic Listening and Note-taking </h5> 
           <div class="view-container">
-          <small> <i class="fa-solid fa-file"></i>  14 Lessons</small>
-          <small> <i class="fa-solid fa-user"></i> 67 students</small>
+          <small> <i class="fa-regular fa-file-lines"></i>  14 Lessons</small>
+          <small> <i class="fa-regular fa-user"></i> 67 students</small>
           </div>
       </div>
       </article>
@@ -83,8 +83,8 @@ export default {
           </div>
           <h5>Master jQuery in a Short Period of Time </h5> 
           <div class="view-container">
-          <small> <i class="fa-solid fa-file"></i>  6 Lessons</small>
-          <small> <i class="fa-solid fa-user"></i> 51 students</small>
+          <small> <i class="fa-regular fa-file-lines"></i>  6 Lessons</small>
+          <small> <i class="fa-regular fa-user"></i> 51 students</small>
           </div>
       </div>
       </article>
@@ -98,8 +98,8 @@ export default {
           </div>
           <h5>Introduction of Javascript for Beginners </h5> 
           <div class="view-container">
-          <small> <i class="fa-solid fa-file"></i>  14 Lessons</small>
-          <small> <i class="fa-solid fa-user"></i> 50 students</small>
+          <small> <i class="fa-regular fa-file-lines"></i> 14 Lessons</small>
+          <small> <i class="fa-regular fa-user"></i> 50 students</small>
           </div>
       </div>
       </article>
@@ -159,7 +159,10 @@ padding-top: 40px;
         }
       }
       small{
-        padding-right:5px
+        padding-right:5px;
+        .fa-user{
+          margin-left:20px;
+        }
       }
       h5{
         font-size:18px;
