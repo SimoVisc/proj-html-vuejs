@@ -3,12 +3,59 @@ import AppLogo from './AppLogo.vue';
 import AppHero from './AppHero.vue';
 
 export default {
-    name: "AppHeader",
-    components: {
-      AppLogo,
-      AppHero
-    },
+  name: "AppHeader",
+  components: {
+    AppLogo,
+    AppHero
+  },
+  data(){
+    return {
+      links: [
+        {
+          href: "#",
+          label:"Home",
+          active: true
+        },
+        {
+          href: "#",
+          label:"Pages",
+          active: false
+        },
+        {
+          href: "#",
+          label:"Courses",
+          active: false
+        },
+        {
+          href: "#",
+          label:"Features",
+          active: false
+        },
+        {
+          href: "#",
+          label:"Blog",
+          active: false
+        },
+        {
+          href: "#",
+          label:"Shop",
+          active: false
+        }
+      ]
+    }
+  },
+  methods: {
+    changeLink(index){
+     this.links.forEach((elm, i) =>{
+     if (i === index) {
+      elm.active = true
+     }else{
+      elm.active = false
+     }
+     });
+    }
   }
+}
 </script>
 
 <template>
@@ -19,13 +66,7 @@ export default {
       <div class="bars">
         <div class="nav-bar">
           <ul>
-            <li>Home <i class="fa-solid fa-chevron-down"></i> </li>
-            <li>Pages <i class="fa-solid fa-chevron-down"></i> </li>
-            <li>Courses <i class="fa-solid fa-chevron-down"></i> </li>
-            <li>Features <i class="fa-solid fa-chevron-down"></i> </li>
-            <li>Blog <i class="fa-solid fa-chevron-down"></i> </li>
-            <li> Shop <i class="fa-solid fa-chevron-down"></i> <i class="fa-solid fa-cart-shopping big"></i> </li>
-            <li><i class="fa-regular fa-circle-user big"></i></li>
+            <li v-for=" (link, index) in links"><a :class=" {active : link.active} " :href="link.href" @click.prevent="changeLink(index)">{{ link.label }}</a></li>
           </ul>
         </div>
         <div class="search-bar">
@@ -53,21 +94,16 @@ header{
     display:flex;
     align-items:center;
     ul{
-      width:100%;
       display:flex;
-      padding-right: 20px;
+      list-style:none;
 
-      li{
-        list-style: none;
-        padding-left:14px;
+      a{
+        display: inline-block;
+        padding:10px;
+        text-decoration: none;
         cursor: pointer;
-        
-        i{
-          font-size: 10px;
-        }
-      .big{
-        font-size: 16px;
-        padding-right:5px
+        &.active{
+          background-color: var( --primary-color) ;
         }
       }
     }
