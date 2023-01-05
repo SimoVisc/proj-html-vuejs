@@ -81,22 +81,27 @@ export default {
 </template>
 
 <style lang="scss" scoped >
+@use '../style/partials/mixins.scss' as *;
+
 header{
-  background-image: url(../assets/img/jumbo-overlay.svg);
+  @include bg-img('../assets/img/jumbo-overlay.svg');
   background-color: var(--bg-primary-color);
   padding:20px;
+  
   .header-top{
    display:flex;
    justify-content: space-between;
    color: var(--secondary-font-color);
-  .bars{
+  
+   .bars{
     width:70%;
     display:flex;
     align-items:center;
+    
     ul{
       display:flex;
       list-style:none;
-
+      
       a{
         display: inline-block;
         padding:10px;

@@ -112,10 +112,10 @@ export default {
 </template>
 
 <style lang="scss" scoped >
+@use '../style/partials/mixins.scss' as *;
 .bg-img{
-  background-image: url(../assets/img/close.svg) ;
+  @include bg-img('../assets/img/close.svg');
   background-color: #fcfcfc;
- 
 }
 .title{
 text-align: center;

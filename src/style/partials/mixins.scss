@@ -1,0 +1,18 @@
+/*---------------
+BACKGROUND
+---------------*/
+@mixin bg-img($url){
+    background-image: url($url);
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
+
+/*---------------
+BUTTON
+---------------*/
+@mixin button() {
+    background-color: var(--primary-color);
+    color:#fff;
+    padding:10px;
+}
