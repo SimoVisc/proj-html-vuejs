@@ -1,96 +1,104 @@
 <script>
 export default {
-  name: 'AppSection1',
-}
+  name: "AppSectionToday",
+  data() {
+    return {
+      cards: [
+        {
+          img: "-01",
+          name: "Idea Discussion",
+          task: "Get teamed up with the specialists who work and teach coding for years at famous universities.",
+          href: "#",
+        },
+        {
+          img: "-02",
+          name: "Web Development",
+          task: "Learn to start building a webpage from scratch. You decide your own pace, course and speed.",
+          href: "#",
+        },
+        {
+          img: "-03",
+          name: "System Administration",
+          task: "Learners are encouraged to study the mechanism and structure of system administration.",
+          href: "#",
+        },
+        {
+          img: "-04",
+          name: "Graphic Design",
+          task: "Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.",
+          href: "#",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <template>
   <section class="container">
-      <div class="title">
-         <small>START LEARNING CODING LANGUAGES</small>
-         <h1>Build Your Dream <span class="green-color">TODAY</span></h1>
-      </div>
-      <div class="articles-container">
-            <article>
-                <div class="img-container"><img class="img-small" src="../assets/img/today-box-01.png" alt=""></div>
-                <div class="text">
-                    <h4>Idea Discussion</h4>
-                    <p>Get teamed up with the specialists who work and teach coding for years at famous universities.</p>
-                    <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
-                </div>
-           </article>
-            <article>
-
-               <div class="img-container"> <img class="img-big" src="../assets/img/today-box-2.png" alt=""></div>
-                <div class="text">
-                    <h4>Web Development</h4>
-                    <p>Learn to start building a webpage from scratch. You decide your own pace, course and speed.</p>
-                    <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
-               </div>
-            </article>
-            <article>
-                <div class="img-container"><img src="../assets/img/today-box-03.png" alt=""></div>
-                <div class="text">
-                    <h4>System Administration</h4>
-                    <p>Learners are encouraged to study the mechanism and structure of system administration.</p>
-                    <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
-               </div>
-            </article>
-            <article>
-                <div class="img-container"><img src="../assets/img/today-box-04.png" alt=""></div>
-                <div class="text">
-                    <h4>Graphic Design</h4>
-                    <p>Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.</p>
-                    <strong><a href="#">start now <i class="fa-solid fa-arrow-right"></i></a></strong>
-               </div>
-            </article>
-      </div>
-    </section>
+    <div class="title">
+      <small>START LEARNING CODING LANGUAGES</small>
+      <h1>Build Your Dream <span class="green-color">TODAY</span></h1>
+    </div>
+    <div class="articles-container">
+      <article v-for="card in cards">
+        <div class="img-container">
+          <img
+            :src="`src/assets/img/today-box${card.img}.png`"
+            :alt="card.name"
+          />
+        </div>
+        <h4>{{ card.name }}</h4>
+        <p>{{ card.task }}</p>
+        <strong
+          ><a :href="card.href"
+            >start now <i class="fa-solid fa-arrow-right"></i></a
+        ></strong>
+      </article>
+    </div>
+  </section>
 </template>
 
-<style lang="scss" scoped >
-    .articles-container{
-        display: flex;
-        padding-top: 50px;
+<style lang="scss" scoped>
+.articles-container {
+  display: flex;
+  padding-top: 3.125rem;
 
-        article{
-        height:100%;
-        padding: 10px;
-        display:flex;
-        flex-direction: column;
-        .img-container{
-          height:200px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin:10px;
+  article {
+    padding: 1.25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 
-            img{
-                width:60%;
-            }
-        }
-            .text{
-                display: flex;
-                flex-direction: column;
-            
-                h4{
-                height:50px;
-                }
-                p{
-                flex-grow:1;
-                }
-                strong{
-                height:50px;
-                display: flex;
-                align-items: flex-end;
-                justify-content: center;
+    .img-container {
+      height: 9.375rem;
+      margin: auto;
 
-                a{
-                color: var(--gray)
-                }
-            }
-        }
-       }
+      img {
+        width: 65%;
+        padding: 1.25rem 0;
+      }
     }
 
+    h4 {
+      height: 3.125rem;
+      margin-top: 1.25rem;
+    }
+
+    p {
+      flex-grow: 1;
+    }
+
+    strong {
+      height: 3.125rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      a {
+        color: var(--gray);
+      }
+    }
+  }
+}
 </style>
